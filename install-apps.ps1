@@ -4,6 +4,6 @@ Add-AppxPackage -Path "C:\Install\Claude.msix"
 
 # Postman
 curl.exe -L "https://dl.pstmn.io/download/latest/win64" -o "C:\Install\Postman.exe"
-Start-Process -Wait "C:\Install\Postman.exe" -ArgumentList "/S"
+Start-Process "C:\Install\Postman.exe" -ArgumentList "/S"
 
 Write-Host "Done!"
